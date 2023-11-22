@@ -3,14 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
-import ItemList from './Components/ItemListContainer'
+import ItemListContainer from './Components/ItemListContainer'
 
 function App() {
   const [count, setCount] = useState(0)
   return (
     <div>
       <Navbar></Navbar>
-      <ItemList greeting='¡Bienvenidos!'/>
+      <ItemListContainer greeting='¡Bienvenidos!' />
     </div>
   )
 }

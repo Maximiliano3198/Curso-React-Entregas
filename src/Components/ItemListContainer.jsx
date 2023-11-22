@@ -9,13 +9,15 @@ const productos = [
     { id: 5, nombre: 'Producto 5', descripcion: 'Descripción del producto 5', imagen: '/descarga.jpg' },
     { id: 6, nombre: 'Producto 6', descripcion: 'Descripción del producto 6', imagen: '/descarga.jpg' },
 ];
-const estiloSaludo = {
-    justifyContent: 'center',
-    display: 'flex',
-    marginBottom: '-8px'
-}
 
-const ItemList = ({greeting}) => {
+
+const ItemListContainer = ({ greeting }) => {
+    const estiloSaludo = {
+        justifyContent: 'center',
+        display: 'flex',
+        marginBottom: '-8px'
+    }
+
     return (
         <div className="container-fluid bg-success">
             <h1 style={estiloSaludo} className="text-dark">{greeting}</h1>
@@ -36,4 +38,4 @@ const ItemList = ({greeting}) => {
     );
 };
 
-export default ItemList
+export default ItemListContainer
