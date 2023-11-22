@@ -9,10 +9,16 @@ const productos = [
     { id: 5, nombre: 'Producto 5', descripcion: 'Descripción del producto 5', imagen: '/descarga.jpg' },
     { id: 6, nombre: 'Producto 6', descripcion: 'Descripción del producto 6', imagen: '/descarga.jpg' },
 ];
+const estiloSaludo = {
+    justifyContent: 'center',
+    display: 'flex',
+    marginBottom: '-8px'
+}
 
-const ItemList = () => {
+const ItemList = ({greeting}) => {
     return (
         <div className="container-fluid bg-success">
+            <h1 style={estiloSaludo} className="text-dark">{greeting}</h1>
             <div className="row">
                 {productos.map((producto) => (
                     <div key={producto.id} className="col-md-3 mt-4">

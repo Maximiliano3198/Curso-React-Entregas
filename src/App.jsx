@@ -2,15 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from './assets/Components/Navbar'
-import ItemList from './assets/Components/ItemList'
+import Navbar from './Components/Navbar'
+import ItemList from './Components/ItemListContainer'
 
 function App() {
   const [count, setCount] = useState(0)
   return (
     <div>
       <Navbar></Navbar>
-      <ItemList ></ItemList>
+      <ItemList greeting='¡Bienvenidos!'/>
     </div>
   )
 }
